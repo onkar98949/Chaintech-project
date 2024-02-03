@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* REGISTER */
+
+.container {
+  margin-top: 200px;
+  width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px 10px;
+  border-radius: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.icons{
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  /* line-height: 1.66; */
+ 
+  padding: 0;
+  font-weight: bold;
+  color: #222;
+  font-family: 'Poppins';
+  font-size: 36px;
+}
+.signup-form{
+  width: 50%;
+}
+.signup-image{
+  width: 50%;
+}
+.register-form{
+  margin: auto;
+  width: 80%;
+}
+
+.signup-form input[type='text'],
+input[type='password'],
+input[type='email']
+ {
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  /* border: none; */
+  border-bottom: 1px solid #999;
+  padding: 6px 15px;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+input:focus{
+  color: #171717;
+  border-bottom: 1px solid #171717;
+  outline: none;
+}
+.form-group{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.signup-content{
+  display: flex;
+  align-items: center;
+}
+
+.submitbtn{
+  display: inline-block;
+  background: #1884ea;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+/* PERSONAL DETAILS */
+
+.pd-form{
+  width: 60%;
+}
+.pd-image{
+  width: 40%;
+}
+
+.maritaldiv{
+  display: flex;
+  flex-direction: column;
+  padding: 7px 20px;
+}
+span{
+  font-weight: 500;
+  font-size: 21px;
+  font-family: Poppins;
+  /* margin-bottom: 6px; */
+  /* padding: 15px 20px; */
+}
+.maritaldiv span{
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Poppins;
+}
+
+.maritaldiv input{
+  width: 15px;
+  font-size: 20px;
+
+}
+.pd-form label{
+  font-size: 17px;
+}
+
+input[type='date']{
+  font-size: 18px;
+  border-bottom: 1px solid #999;
+  width: 60%;
+  margin-top: 0px; 
+}
+.pd-image img{
+  height: 70%;
 }
